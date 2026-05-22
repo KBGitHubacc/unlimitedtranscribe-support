@@ -2,7 +2,7 @@ UnlimitedTranscribe Support
 
 For support, questions, or bug reports:
 
-Email: kbito@me.com
+Email: support@krisz.co.uk
 
 Privacy:
 UnlimitedTranscribe stores API keys securely in the Apple Keychain.
