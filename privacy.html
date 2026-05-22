@@ -2,36 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>UnlimitedTranscribe Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UnlimitedTranscribe Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for UnlimitedTranscribe.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: Canvas;
+      --fg: CanvasText;
+      --muted: color-mix(in srgb, CanvasText 68%, Canvas 32%);
+      --border: color-mix(in srgb, CanvasText 18%, Canvas 82%);
+      --accent: #0a84ff;
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.1;
+      margin: 0 0 12px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.35rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
+  <main>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>This Privacy Policy explains how UnlimitedTranscribe handles information when you use the app.</p>
+      <p>Last updated: May 22, 2026</p>
+    </header>
 
-  <p>Last updated: May 21, 2026</p>
+    <section>
+      <h2>Overview</h2>
+      <p>UnlimitedTranscribe is designed to process audio files for transcription, translation, formatting, and related workflow features. The app stores most app data locally on your device. When you choose cloud-based transcription or translation, the app sends the required content to the selected service provider so the requested feature can work.</p>
+    </section>
 
-  <p>UnlimitedTranscribe is designed to transcribe audio using either local on-device Whisper models or a user-provided OpenAI API key.</p>
+    <section>
+      <h2>Information the App May Process</h2>
+      <p>Depending on how you use the app, UnlimitedTranscribe may process:</p>
+      <ul>
+        <li>Audio files you import.</li>
+        <li>Generated transcripts, translations, timestamps, and formatted output.</li>
+        <li>Job metadata such as file name, duration, processing status, progress, model selection, language selection, and error state.</li>
+        <li>App settings, including transcription model, translation options, local model choices, and workflow preferences.</li>
+        <li>Your OpenAI API key if you choose to use your own key.</li>
+        <li>Subscription and purchase state provided by Apple StoreKit.</li>
+        <li>Usage and billing metadata needed to manage subscriptions, credits, or app-managed usage where those features are available.</li>
+        <li>Diagnostic information such as non-sensitive error messages, processing step identifiers, retry counts, and technical logs.</li>
+      </ul>
+    </section>
 
-  <h2>Audio Processing</h2>
-  <p>When using local Whisper transcription, audio is processed on the user’s device and is not sent to an external transcription service.</p>
-  <p>When using OpenAI transcription, audio is sent to OpenAI for processing using the API key provided by the user.</p>
+    <section>
+      <h2>Audio, Transcripts, and Translation Content</h2>
+      <p>Audio files and generated text may contain personal or sensitive information. You control what files you import into the app.</p>
+      <p>If you use local transcription or local Apple system translation features, processing is designed to occur on your device or through Apple-provided system functionality, depending on the feature and operating system behavior.</p>
+      <p>If you use OpenAI-powered transcription, translation, validation, or formatting features, the app sends the relevant audio, transcript text, prompt context, and configuration details to OpenAI so the request can be completed.</p>
+    </section>
 
-  <h2>API Keys</h2>
-  <p>If the user chooses to use OpenAI processing, the OpenAI API key is stored securely on the device using Apple Keychain.</p>
+    <section>
+      <h2>OpenAI API Key</h2>
+      <p>If you provide your own OpenAI API key, the app stores it in Apple Keychain on your device using device-protected Keychain storage. The app uses the key only to make OpenAI API requests that you initiate through app features.</p>
+      <p>Do not send your API key to support. You can remove your saved API key from the app settings where available.</p>
+    </section>
 
-  <h2>Local Data</h2>
-  <p>UnlimitedTranscribe may store temporary audio artifacts, intermediate transcripts, final transcripts, settings, and job information locally on the device.</p>
-  <p>Users can delete local app data from within the app.</p>
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>UnlimitedTranscribe may interact with the following third-party or platform services:</p>
+      <ul>
+        <li><strong>OpenAI:</strong> Used when you choose OpenAI-powered transcription, translation, model lookup, validation, or related processing. OpenAI receives the content necessary to process your request. OpenAI's handling of that data is governed by OpenAI's own terms and privacy policies.</li>
+        <li><strong>Apple:</strong> Used for App Store distribution, StoreKit purchases, subscription management, purchase restoration, and Apple platform features. Apple may process purchase and device-related information according to Apple's privacy policies.</li>
+        <li><strong>Apple Translation and local system services:</strong> Some app versions may use Apple system translation or local platform capabilities where available.</li>
+      </ul>
+    </section>
 
-  <h2>Data Collection</h2>
-  <p>UnlimitedTranscribe does not sell user data.</p>
-  <p>UnlimitedTranscribe does not use user audio or transcripts for advertising.</p>
-  <p>UnlimitedTranscribe does not require an external account or login.</p>
+    <section>
+      <h2>Purchases and Subscriptions</h2>
+      <p>Purchases and subscriptions are handled by Apple through the App Store and StoreKit. UnlimitedTranscribe receives purchase and entitlement information from Apple so the app can determine whether subscription access or purchased features are available.</p>
+      <p>The app does not receive your full payment card number from Apple.</p>
+    </section>
 
-  <h2>Third-Party Services</h2>
-  <p>If OpenAI processing is enabled by the user, audio and related request data are processed by OpenAI according to OpenAI’s applicable terms and privacy policy.</p>
+    <section>
+      <h2>Local Storage and Security</h2>
+      <p>UnlimitedTranscribe stores app data such as jobs, transcripts, settings, temporary artifacts, logs, billing metadata, and local model state on your device. The app uses Apple platform security features, including Keychain for API keys and app-managed encryption for sensitive local artifacts where supported by the app.</p>
+      <p>Temporary processing files may be created during transcription. The app is designed to clean up temporary files after successful processing or when you delete related data.</p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>For privacy questions, contact: <a href="mailto:support@krisz.co.uk">support@krisz.co.uk</a></p>
+    <section>
+      <h2>Diagnostics and Logs</h2>
+      <p>The app may create diagnostic logs to help identify processing failures and support troubleshooting. Logs are intended to include technical information such as timestamps, processing steps, retry attempts, and error messages.</p>
+      <p>Logs are not intended to include API keys, full transcript content, private audio, or other sensitive user content. If you contact support, avoid sending sensitive files or text unless required for troubleshooting and only share the minimum necessary information.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>Data stored locally remains on your device until you delete it, remove the app, clear app data, or the app deletes temporary files as part of normal cleanup. OpenAI, Apple, and other service providers may retain data according to their own policies when their services are used.</p>
+    </section>
+
+    <section>
+      <h2>Data Deletion</h2>
+      <p>You can delete jobs, transcripts, generated outputs, temporary files, and your saved OpenAI API key using the app controls where available. You can also remove the app from your device to delete app-local data managed by the operating system.</p>
+      <p>For help with deletion or privacy questions, contact <a href="mailto:support@krisz.co.uk">support@krisz.co.uk</a>.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>UnlimitedTranscribe is not intended for children under 13. The app does not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+      <h2>International Use</h2>
+      <p>If you use cloud-based services such as OpenAI or Apple services, information may be processed in countries other than your country of residence, subject to those providers' policies and legal requirements.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated from time to time. The updated version will be posted on this page with a new “Last updated” date.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For privacy questions or support, contact <a href="mailto:support@krisz.co.uk">support@krisz.co.uk</a>.</p>
+    </section>
+
+    <footer>
+      <a href="index.html">Back to Support</a>
+    </footer>
+  </main>
 </body>
 </html>
