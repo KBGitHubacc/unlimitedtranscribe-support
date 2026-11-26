@@ -67,7 +67,7 @@
     <header>
       <h1>Privacy Policy</h1>
       <p>This Privacy Policy explains how UnlimitedTranscribe handles information when you use the app.</p>
-      <p>Last updated: May 22, 2026</p>
+      <p>Last updated: November 26, 2026</p>
     </header>
 
     <section>
@@ -85,7 +85,6 @@
         <li>App settings, including transcription model, translation options, local model choices, and workflow preferences.</li>
         <li>Your OpenAI API key if you choose to use your own key.</li>
         <li>Subscription and purchase state provided by Apple StoreKit.</li>
-        <li>Usage and billing metadata needed to manage subscriptions, credits, or app-managed usage where those features are available.</li>
         <li>Diagnostic information such as non-sensitive error messages, processing step identifiers, retry counts, and technical logs.</li>
       </ul>
     </section>
@@ -94,7 +93,23 @@
       <h2>Audio, Transcripts, and Translation Content</h2>
       <p>Audio files and generated text may contain personal or sensitive information. You control what files you import into the app.</p>
       <p>If you use local transcription or local Apple system translation features, processing is designed to occur on your device or through Apple-provided system functionality, depending on the feature and operating system behavior.</p>
-      <p>If you use OpenAI-powered transcription, translation, validation, or formatting features, the app sends the relevant audio, transcript text, prompt context, and configuration details to OpenAI so the request can be completed.</p>
+      <p>If you use OpenAI-powered transcription and translation with your own API key, the app sends the content described in the next section to OpenAI, and only after you allow it.</p>
+    </section>
+
+    <section>
+      <h2>Data Sent to OpenAI, a Third-Party AI Service</h2>
+      <p>UnlimitedTranscribe has two modes. In on-device mode, transcription and translation run on your device, and nothing is sent to OpenAI. In API-key mode, the app uses OpenAI (OpenAI, L.L.C.), a third-party AI service, with the OpenAI API key you provide.</p>
+      <p><strong>Your permission comes first.</strong> Before a job in API-key mode sends anything to OpenAI, the app shows what will be sent and to whom, and asks for your permission. Nothing is sent until you choose Allow. You can withdraw your permission at any time in Settings, under OpenAI API key, with the “Send Audio and Text to OpenAI” switch; jobs then ask again before sending anything.</p>
+      <p><strong>What is sent:</strong></p>
+      <ul>
+        <li>The audio of the job you start, in compressed parts, to transcribe it.</li>
+        <li>The job's transcript text, and where context between parts is turned on, the preceding transcript text, to transcribe, translate, check the translation and write Refined English.</li>
+        <li>Your OpenAI API key, with each request, so that OpenAI can authenticate it and bill your OpenAI account.</li>
+        <li>Technical request details, such as the model name, the language setting and request options. When you save a key or start a job, the app also asks OpenAI which models your key can use; that request carries only your key.</li>
+      </ul>
+      <p><strong>How it is sent:</strong> directly from your device to the OpenAI API over an encrypted, certificate-pinned HTTPS connection. It does not pass through any server of the app's developer, and the developer does not receive, store or have access to your audio, your transcripts or your key.</p>
+      <p><strong>How it is used:</strong> only to carry out the transcription, translation and Refined English you ask for. The app does not use this data for advertising, analytics or tracking, and the developer does not sell or share it with anyone else.</p>
+      <p><strong>How OpenAI protects it:</strong> OpenAI processes the data under its API terms and privacy policy, which protect it at least as well as this policy does. Under OpenAI's API data controls, data sent through the API is not used to train OpenAI's models unless you opt in, and OpenAI may keep request logs for up to 30 days for abuse monitoring, unless the law requires longer (some endpoints, such as audio transcription, keep none). See <a href="https://openai.com/policies/privacy-policy/">OpenAI's Privacy Policy</a> and <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data controls</a>.</p>
     </section>
 
     <section>
@@ -107,7 +122,7 @@
       <h2>Third-Party Services</h2>
       <p>UnlimitedTranscribe may interact with the following third-party or platform services:</p>
       <ul>
-        <li><strong>OpenAI:</strong> Used when you choose OpenAI-powered transcription, translation, model lookup, validation, or related processing. OpenAI receives the content necessary to process your request. OpenAI's handling of that data is governed by OpenAI's own terms and privacy policies.</li>
+        <li><strong>OpenAI:</strong> Used only in API-key mode, after you allow it, for transcription, translation, translation checks, Refined English and model lookup. What is sent, how and why is described in “Data Sent to OpenAI, a Third-Party AI Service” above. OpenAI's handling of that data is governed by OpenAI's own terms and privacy policy.</li>
         <li><strong>Apple:</strong> Used for App Store distribution, StoreKit purchases, subscription management, purchase restoration, and Apple platform features. Apple may process purchase and device-related information according to Apple's privacy policies.</li>
         <li><strong>Apple Translation and local system services:</strong> Some app versions may use Apple system translation or local platform capabilities where available.</li>
       </ul>
